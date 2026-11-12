@@ -1,4 +1,4 @@
-# Larder public documentation and support site
+# Crockery public documentation and support site
 
 Static files for the Shopify Theme Store listing.
 
@@ -26,10 +26,10 @@ In `support.html`:
 1. The form action is `https://formsubmit.co/allmarwanacc-emmc9c@mail.grokbot.com`.
 2. The `_next` thank-you URL is `https://sohofisohofi6-ux.github.io/larder/thanks.html`.
 
-The first real submission sends a FormSubmit activation email to that inbox. The form does not deliver tickets until the confirmation link in that email is opened. After confirmation, a second test with a screenshot should arrive in the support inbox, with Reply-To set to the merchant email, a subject starting with `Larder support:`, and an auto-reply to the submitter. Keep reCAPTCHA enabled. Add `theme-submissions@shopify.com`, `themes@shopify.com`, and `noreply@shopify.com` to the inbox allow list, and watch for mail from FormSubmit so the activation message is not filed as spam.
+The first real submission sends a FormSubmit activation email to that inbox. The form does not deliver tickets until the confirmation link in that email is opened. After confirmation, a second test with a screenshot should arrive in the support inbox, with Reply-To set to the merchant email, a subject starting with `Crockery support:`, and an auto-reply to the submitter. Keep reCAPTCHA enabled. Add `theme-submissions@shopify.com`, `themes@shopify.com`, and `noreply@shopify.com` to the inbox allow list, and watch for mail from FormSubmit so the activation message is not filed as spam.
 
 After the Pages URLs work, set `theme_documentation_url` and `theme_support_url` in the theme `config/settings_schema.json` to the two public URLs above, then package the theme. Use those same public URLs on the Theme Store listing form.
 
 ## Form field mapping
 
-The support form includes the Theme Store fields: name, email, store URL (with the required example), description of the problem (textarea), file upload, theme name (pre-filled "Larder"), and subject (copied into the email subject line). An auto-response message is set, and a thank-you page is at `thanks.html`.
+The support form includes the Theme Store fields: name, email, store URL (with the required example), description of the problem (textarea), file upload, theme name (pre-filled "Crockery"), and subject (copied into the email subject line). An auto-response message is set, and a thank-you page is at `thanks.html`.
