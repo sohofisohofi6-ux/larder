@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Larder theme support</title>
+  <meta name="description" content="Contact the Larder theme team for theme questions and bug reports. We reply within two business days.">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">Larder</a>
+      <nav>
+        <a href="index.html">Documentation</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <p class="kicker">Merchant support</p>
+    <h1>Contact the Larder theme team</h1>
+    <p>Use this form for theme questions and bug reports. We reply within two business days. Critical bugs are fixed as soon as possible. Customizations, app setup, and extra design work are not included in the theme price.</p>
+    <p class="muted">After you send the form, you will receive an automatic email confirming that we received your request. A reCAPTCHA step is required so that confirmation can be sent.</p>
+
+    <!--
+      FormSubmit delivers to allmarwanacc-emmc9c@mail.grokbot.com.
+      Thank-you page: https://sohofisohofi6-ux.github.io/larder/thanks.html
+    -->
+    <form class="card" action="https://formsubmit.co/allmarwanacc-emmc9c@mail.grokbot.com" method="POST" enctype="multipart/form-data" id="larder-support-form">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://sohofisohofi6-ux.github.io/larder/thanks.html">
+      <input type="hidden" name="_subject" id="email-subject" value="Larder theme support">
+      <input type="hidden" name="_autoresponse" value="Thanks for contacting Larder theme support. We received your request and will reply within two business days. Critical bugs are fixed as soon as possible.">
+      <input type="hidden" name="_replyto" id="replyto-field" value="">
+
+      <label class="ohnohoney" for="website">Website</label>
+      <input class="ohnohoney" id="website" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="store">Store URL</label>
+      <input id="store" name="store" type="url" placeholder="http://www.storename.myshopify.com" required>
+      <p class="muted">Use your myshopify.com URL, for example http://www.storename.myshopify.com.</p>
+
+      <label for="theme">Theme name</label>
+      <input id="theme" name="theme" type="text" value="Larder" required>
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" placeholder="Product page add to cart">
+
+      <label for="message">Description of problem</label>
+      <textarea id="message" name="message" required placeholder="What did you expect, and what happened instead?"></textarea>
+
+      <label for="attachment">File upload</label>
+      <input id="attachment" name="attachment" type="file" accept="image/*,.zip,.txt,.pdf">
+      <p class="muted">Add a screenshot of the issue when you can. Combined uploads must be 10 MB or smaller.</p>
+
+      <button type="submit">Send support request</button>
+    </form>
+
+    <h2>What to include</h2>
+    <ul class="plain">
+      <li>The store URL and whether you are using a published theme or a copy.</li>
+      <li>The page or template where the issue appears, such as the product page or cart.</li>
+      <li>Screenshots, and any theme editor setting you already tried.</li>
+    </ul>
+  </main>
+  <footer class="site"><div class="wrap">Larder theme support, version 0.2.1.</div></footer>
+  <script>
+    document.getElementById("larder-support-form").addEventListener("submit", function () {
+      var email = document.getElementById("email").value;
+      var subject = document.getElementById("subject").value.trim();
+      document.getElementById("replyto-field").value = email;
+      document.getElementById("email-subject").value = subject
+        ? "Larder support: " + subject
+        : "Larder theme support";
+    });
+  </script>
+</body>
+</html>
